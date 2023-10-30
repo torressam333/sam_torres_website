@@ -1,9 +1,45 @@
-import React from 'react'
+/* eslint-disable react/no-unknown-property */
+import { Suspense, useEffect, useState } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import CanvasLoader from '../Loader';
 
 const Computers = () => {
-  return (
-    <div>Computers</div>
-  )
-}
+  const computer = useGLTF('./desktop_pc/scene.gltf');
 
-export default Computers
+  return (
+    <mesh>
+      <hemisphereLight intensity={1} groundColor='white' />
+      <pointLight intensity={1} />
+      <primitive
+        object={computer.scene}
+        scale={0.75}
+        position={[0, -2, -1.5]}
+      />
+    </mesh>
+  );
+};
+
+const ComputerCanvas = () => {
+  return (
+    <Canvas
+      frameloop='demand'
+      shadows
+      camera={{ position: [20, 3, 5], fov: 30 }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense>
+        {/* Only rotate on x-axis */}
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <Computers />
+      </Suspense>
+      <Preload all />
+    </Canvas>
+  );
+};
+
+export default ComputerCanvas;
