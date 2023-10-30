@@ -1,5 +1,6 @@
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import saaBadge from '../assets/saa-c03.png';
 
 const Hero = () => {
   return (
@@ -17,10 +18,12 @@ const Hero = () => {
             Welcome! <span className='text-[#3e7eff]'>Have a look around</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Software engineer with 5 years of experience in web, cloud, and AWS.
-            I love all things <span className='text-[#f7df1e]'>JavaScript</span>
-            . I enjoy working with APIs; in any form and learning about event
+            Software engineer and AWS Solutions Architect with 5 years of
+            experience in web, cloud, and AWS. I love all things{' '}
+            <span className='text-[#f7df1e]'>JavaScript</span>
+            . I enjoy working with APIs in any form and learning about event
             driven architectures in AWS.
+            <img className='w-[5em]' src={saaBadge} alt='saa badge' />
           </p>
         </div>
       </div>
