@@ -19,7 +19,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Software engineer with 5 years of experience in web, cloud, and AWS.
             I love all things <span className='text-[#f7df1e]'>JavaScript</span>
-            . I enjoy working with API's in any form and learning about event
+            . I enjoy working with APIs; in any form and learning about event
             driven architectures in AWS.
           </p>
         </div>
