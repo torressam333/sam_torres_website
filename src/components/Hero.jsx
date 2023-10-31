@@ -1,6 +1,7 @@
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 import saaBadge from '../assets/saa-c03.png';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -28,6 +29,21 @@ const Hero = () => {
         </div>
       </div>
       <ComputersCanvas />
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+        <a href='#about'>
+          <div className='w-[2.5em] h-[5em] rounded-3xl border-4 border-secondary flex justify-center items-start b-2'>
+            <motion.div
+              animate={{ y: [5, 45, 5] }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                repeatType: 'loop',
+              }}
+              className='w-4 h-4 rounded-full bg-secondary mb-1'
+            />
+          </div>
+        </a>
+      </div>
     </section>
   );
 };
