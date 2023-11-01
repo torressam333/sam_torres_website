@@ -12,16 +12,16 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
   saaCo3,
   vueReactLogo,
+  SDC1,
+  SDC2,
+  Goodwill,
+  Palomar,
 } from '../assets';
 
 export const navLinks = [
@@ -115,11 +115,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
+    title: 'Senior Software Engineer II/Team Lead',
+    company_name: 'SmileDirectClub',
+    icon: SDC2,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'January 2023 - Present',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -128,11 +128,11 @@ const experiences = [
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
+    title: 'Senior Software Engineer I',
+    company_name: 'SmileDirectClub',
+    icon: SDC1,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'May 2022 - January 2023',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -141,11 +141,11 @@ const experiences = [
     ],
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
+    title: 'Software Engineer',
+    company_name: 'Goodwill Industries',
+    icon: Goodwill,
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    date: 'Jan 2019 - May 2022',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -154,11 +154,11 @@ const experiences = [
     ],
   },
   {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
+    title: 'Computer Science Studies',
+    company_name: 'Palomar College',
+    icon: Palomar,
     iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
+    date: 'November 2017 - May 2019',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',

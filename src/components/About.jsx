@@ -5,12 +5,13 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import saaBadge from '../assets/saaCo3.png';
+import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
-        variants={fadeIn('right', 'spring', 0.75 * index, 1)}
+        variants={fadeIn('right', 'spring', 0.5 * index, 1)}
         className='w-full green-blue-gradient p-[2px] rounded-[24px] shadow-card'
       >
         <div
@@ -62,4 +63,6 @@ const About = () => {
   );
 };
 
-export default About;
+const wrappedAbout = SectionWrapper(About, 'about');
+
+export default wrappedAbout;

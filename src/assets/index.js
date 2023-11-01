@@ -10,6 +10,10 @@ import close from './close.svg';
 import saaCo3 from '../assets/saaCo3.png';
 import nodeLogo from '../assets/node.png';
 import vueReactLogo from '../assets/vue-react.png';
+import SDC1 from '../assets/SDC1.png';
+import SDC2 from '../assets/SDC2.png';
+import Goodwill from '../assets/Goodwill_Industries_Logo.png';
+import Palomar from '../assets/Palomar-college.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
@@ -35,6 +39,10 @@ import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 
 export {
+  Palomar,
+  Goodwill,
+  SDC1,
+  SDC2,
   vueReactLogo,
   nodeLogo,
   saaCo3,
