@@ -1,8 +1,5 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
+  nodeLogo,
   javascript,
   typescript,
   html,
@@ -23,6 +20,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  saaCo3,
+  vueReactLogo,
 } from '../assets';
 
 export const navLinks = [
@@ -42,20 +41,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Application Developer',
-    icon: web,
-  },
-  {
     title: 'Frontend Engineer',
-    icon: mobile,
+    icon: vueReactLogo,
   },
   {
-    title: 'Backend Engineer',
-    icon: backend,
+    title: 'Node.js Engineer',
+    icon: nodeLogo,
   },
   {
     title: 'AWS Solutions Architect',
-    icon: creator,
+    icon: saaCo3,
+  },
+  {
+    title: 'Docker Apprentice',
+    icon: docker,
   },
 ];
 

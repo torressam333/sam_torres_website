@@ -1,6 +1,5 @@
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
-import saaBadge from '../assets/saa-c03.png';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -19,19 +18,15 @@ const Hero = () => {
             Welcome! <span className='text-[#3e7eff]'>Have a look around</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Software engineer and AWS Solutions Architect with 5 years of
-            experience in web, cloud, and AWS. I love all things{' '}
-            <span className='text-[#f7df1e]'>JavaScript</span>
-            . I enjoy working with APIs in any form and learning about event
-            driven architectures in AWS.
-            <img className='w-[5em]' src={saaBadge} alt='saa badge' />
+            Software engineer and AWS Solutions Architect who loves all things
+            <span className='text-[#f7df1e]'> JavaScript</span>!
           </p>
         </div>
       </div>
       <ComputersCanvas />
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
-          <div className='w-[2.5em] h-[5em] rounded-3xl border-4 border-secondary flex justify-center items-start b-2'>
+          <div className='w-[2.5em] h-[5em] rounded-3xl border-4 border-secondary flex justify-center items-start b-1'>
             <motion.div
               animate={{ y: [5, 45, 5] }}
               transition={{
