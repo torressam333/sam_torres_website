@@ -49,7 +49,7 @@ const services = [
     icon: nodeLogo,
   },
   {
-    title: 'AWS Solutions Architect',
+    title: 'AWS Certified Solutions Architect',
     icon: saaCo3,
   },
   {
