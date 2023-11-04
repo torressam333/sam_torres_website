@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
-import saaBadge from '../assets/saaCo3.png';
 import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -51,7 +50,6 @@ const About = () => {
           clients to create production ready, scalable, and user-friendly
           solutions that solve real-world problems.
         </p>
-        <img className='w-[4em]' src={saaBadge} alt='saa badge' />
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10 '>

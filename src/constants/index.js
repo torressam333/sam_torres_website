@@ -12,9 +12,6 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   saaCo3,
   vueReactLogo,
@@ -22,6 +19,10 @@ import {
   SDC2,
   Goodwill,
   Palomar,
+  privateSnsProject,
+  mca_project,
+  sdc_project,
+  cinemania_project,
 } from '../assets';
 
 export const navLinks = [
@@ -197,16 +198,15 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
-    description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    name: 'Smile Direct Club Global Website',
+    description: `SmileDirectClub's web app is a one-stop shop for aligner treatment management. It allows users to book appointments, get insurance verification, assess their smile, track progress, and get support. Built with Vue and Node.js, the app is fast, reliable, and scalable and serves millions of users annually. It also utilizes microservice integrations, Jest and Vue Test Utils for testing, and Contentful CMS.`,
     tags: [
       {
-        name: 'react',
+        name: 'vue',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'node',
         color: 'green-text-gradient',
       },
       {
@@ -214,13 +214,21 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: sdc_project,
+    source_code_link: 'https://smiledirectclub.com/',
   },
   {
-    name: 'Job IT',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    name: 'Goodwill Industries',
+    description: `
+      MyCareerAdvisor is a national multi-tenant web application built in Laravel, PHP, React, MySQL and Deployed to AWS. It is a non-profit organization dedicated to helping the unemployed and underemployed upskill, have experience, offer resume and cv help and overall help them improve their lives by providing connections to resources and assets to help the jobseeker improve their lives and end poverty through the power of work.
+
+      MyCareerAdvisor provides a variety of services to help the unemployed and underemployed find and keep good jobs. These services include:
+
+      Upskilling: MyCareerAdvisor provides users with access to a variety of resources to help them upskill and learn new skills. This includes online courses, tutorials, and articles.
+      Experience: MyCareerAdvisor provides users with opportunities to gain experience through volunteer work, internships, and apprenticeships.
+      Resume and CV help: MyCareerAdvisor provides users with help writing their resumes and CVs. This includes help with formatting, content, and keyword optimization.
+      Connections to resources and assets: MyCareerAdvisor provides users with connections to resources and assets that can help them improve their lives. This includes job boards, financial assistance programs, and government services.
+      MyCareerAdvisor is a valuable resource for the unemployed and underemployed. It is helping people to upskill, gain experience, find jobs, and improve their lives. By providing people with the tools and resources they need to succeed, MyCareerAdvisor is helping to end poverty through the power of work.`,
     tags: [
       {
         name: 'react',
@@ -235,20 +243,28 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: mca_project,
+    source_code_link: 'https://mycareeradvisor.com/',
   },
   {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    name: 'Cinemania',
+    description: `Cinemania: A React Application for True Movie Fans
+          Cinemania is a React application that works with the TMDB movie REST API to bring in movies and create a movie directory. It allows users to filter and sort movies by their rating, date, and other criteria. Cinemania is meant to serve as a place for true movie fans to browse the latest and most popular and upcoming movies.
+
+          Features of Cinemania
+
+          Movie directory: Cinemania's movie directory includes information about thousands of movies, including title, release date, genre, cast, crew, and rating.
+          Filtering and sorting: Users can filter and sort movies by rating, date, genre, and other criteria. This makes it easy to find movies that match their interests.
+          Movie details: Cinemania provides detailed information about each movie, including a synopsis, trailer, and reviews.
+          User ratings: Users can rate movies on a scale of 1 to 5 stars. This helps other users to find movies that they are likely to enjoy.
+        `,
     tags: [
       {
-        name: 'nextjs',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'rest-api',
         color: 'green-text-gradient',
       },
       {
@@ -256,7 +272,29 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
+    image: cinemania_project,
+    source_code_link: 'https://github.com/torressam333/cinemania',
+  },
+  {
+    name: 'SNS-Plugin-Service',
+    description: `
+    A Model-Controller architecture application in Node.js using the AWS SDK can be a valuable tool for developers looking to create scalable and reliable apps by integrating with SNS and SQS queues in an AWS event-driven architecture. This approach separates business logic from presentation, making apps more modular and easier to maintain. Node.js is ideal for event-driven apps, and the AWS SDK simplifies interaction with AWS services like SNS and SQS. These services enable asynchronous communication and efficient message processing. Benefits include scalability, reliability, ease of use, and thorough unit testing, making it a powerful and flexible solution for building robust applications.
+        `,
+    tags: [
+      {
+        name: 'node.js',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'AWS Api',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'SNS/SQS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: privateSnsProject,
     source_code_link: 'https://github.com/',
   },
 ];

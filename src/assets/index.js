@@ -14,6 +14,10 @@ import SDC1 from '../assets/SDC1.png';
 import SDC2 from '../assets/SDC2.png';
 import Goodwill from '../assets/Goodwill_Industries_Logo.png';
 import Palomar from '../assets/Palomar-college.png';
+import sdc_project from './sdc_project.png';
+import mca_project from './mca_project.png';
+import cinemania_project from './cinemania_project.png';
+import privateSnsProject from './private_sns_plugin_tool.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
@@ -39,6 +43,10 @@ import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 
 export {
+  sdc_project,
+  mca_project,
+  cinemania_project,
+  privateSnsProject,
   Palomar,
   Goodwill,
   SDC1,
