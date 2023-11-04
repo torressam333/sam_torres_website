@@ -23,6 +23,7 @@ import {
   mca_project,
   sdc_project,
   cinemania_project,
+  github,
 } from '../assets';
 
 export const navLinks = [
@@ -198,24 +199,26 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Smile Direct Club Global Website',
+    name: 'Smile Direct Club',
     description: `SmileDirectClub's web app is a one-stop shop for aligner treatment management. It allows users to book appointments, get insurance verification, assess their smile, track progress, and get support. Built with Vue and Node.js, the app is fast, reliable, and scalable and serves millions of users annually. It also utilizes microservice integrations, Jest and Vue Test Utils for testing, and Contentful CMS.`,
     tags: [
       {
-        name: 'vue',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'node',
+        name: 'nuxt.js',
         color: 'green-text-gradient',
       },
+
       {
-        name: 'tailwind',
+        name: 'bulma',
         color: 'pink-text-gradient',
+      },
+      {
+        name: 'node.js',
+        color: 'green-text-gradient',
       },
     ],
     image: sdc_project,
     source_code_link: 'https://smiledirectclub.com/',
+    icon: SDC2,
   },
   {
     name: 'Goodwill Industries',
@@ -227,7 +230,7 @@ const projects = [
       Upskilling: MyCareerAdvisor provides users with access to a variety of resources to help them upskill and learn new skills. This includes online courses, tutorials, and articles.
       Experience: MyCareerAdvisor provides users with opportunities to gain experience through volunteer work, internships, and apprenticeships.
       Resume and CV help: MyCareerAdvisor provides users with help writing their resumes and CVs. This includes help with formatting, content, and keyword optimization.
-      Connections to resources and assets: MyCareerAdvisor provides users with connections to resources and assets that can help them improve their lives. This includes job boards, financial assistance programs, and government services.
+    Connections to resources and assets: MyCareerAdvisor provides users with connections to resources and assets that can help them improve their lives. This includes job boards, financial assistance programs, and government services.
       MyCareerAdvisor is a valuable resource for the unemployed and underemployed. It is helping people to upskill, gain experience, find jobs, and improve their lives. By providing people with the tools and resources they need to succeed, MyCareerAdvisor is helping to end poverty through the power of work.`,
     tags: [
       {
@@ -235,8 +238,8 @@ const projects = [
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: 'Laravel',
+        color: 'orange-text-gradient',
       },
       {
         name: 'scss',
@@ -245,6 +248,7 @@ const projects = [
     ],
     image: mca_project,
     source_code_link: 'https://mycareeradvisor.com/',
+    icon: Goodwill,
   },
   {
     name: 'Cinemania',
@@ -274,6 +278,7 @@ const projects = [
     ],
     image: cinemania_project,
     source_code_link: 'https://github.com/torressam333/cinemania',
+    icon: github,
   },
   {
     name: 'SNS-Plugin-Service',
@@ -286,16 +291,17 @@ const projects = [
         color: 'blue-text-gradient',
       },
       {
-        name: 'AWS Api',
+        name: 'SNS|SQS',
         color: 'green-text-gradient',
       },
       {
-        name: 'SNS/SQS',
-        color: 'pink-text-gradient',
+        name: 'Serverless',
+        color: 'orange-text-gradient',
       },
     ],
     image: privateSnsProject,
     source_code_link: 'https://github.com/',
+    icon: github,
   },
 ];
 
