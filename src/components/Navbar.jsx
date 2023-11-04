@@ -6,7 +6,7 @@ import { st3Logo } from '../assets';
 import MobileNavbar from './MobileNavbar';
 
 const Navbar = () => {
-  const navMainClass = `${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-do bg-primary`;
+  const navMainClass = `${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-10 bg-primary`;
 
   // State vars
   const [active, setActive] = useState('');

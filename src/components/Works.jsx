@@ -27,12 +27,8 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
-        options={
-          !expanded
-            ? { max: 45, scale: 1, speed: 450 }
-            : { max: 0, scale: 0, speed: 0 }
-        }
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        options={{ max: 45, scale: 1, speed: 450, zIndex: 1 }}
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full relative'
       >
         <div className='relative w-full h-[250px]'>
           <img
@@ -53,7 +49,7 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-        <div className='mt-5'>
+        <div className={expanded ? 'mt-5 bg-tertiary' : 'mt-5'}>
           <button onClick={handleClick}>
             {expanded ? 'Collapse' : 'Expand'}
           </button>
@@ -107,4 +103,4 @@ const Works = () => (
   </>
 );
 
-export default SectionWrapper(Works, '');
+export default SectionWrapper(Works, 'work');
