@@ -118,10 +118,14 @@ const experiences = [
     iconBg: '#383E56',
     date: 'January 2023 - Present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      `Work as part of a fully remote front end team in the development of a global marketing site and micro-services using Node,  Vue, Docker, and AWS services, prioritizing user-friendliness, slick UI's, and seamless integration with Contentful CMS.`,
+      `Contribute to creating a reusable component library to ensure code cleanliness and maximum reusablity.`,
+      `Spearhead new initiatives for implementing new technologies for continual team improvement.`,
+      'Collaborate with cross-functional technology teams including designers, product managers, and other developers to create high-quality products.',
+      `Facilitate grooming, planning, and retrospective meetings for the team in
+        conjunction with a business analyst, ensuring meticulous sprint planning and alignment with business objectives.`,
+      'Participate in thorough code reviews and providing constructive feedback to other developers.',
+      'Offer big picture ideas and architectures to make our applications more performant, highly available and fault tolerant',
     ],
   },
   {
@@ -131,10 +135,16 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'May 2022 - January 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      `Develop, test, and maintain a production scale Node.js/Express
+        Microservice BFF (Backend for Frontend) system which seamlessly integrates with various internal microservices, serving as a reliable API for our front-end applications. It is deployed to a private vpc using Docker, Terraform, and runs in ECS. Has automated jest/nock unit testing that runs via GitHub actions.`,
+      `Collaborate daily with UI/UX designers, QA testing teams (UAT), and the
+        Marketing team to ensure successful feature planning and releases.
+        Facilitate grooming, planning, and retrospective meetings for the team in
+        conjunction with a business analyst, ensuring meticulous sprint planning and
+        alignment with business objectives.`,
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      `Implement application security with HashiCorp’s Vault and JWT’s and API
+best practices including but not limited to encryption in transit and at rest.`,
     ],
   },
   {
@@ -144,10 +154,10 @@ const experiences = [
     iconBg: '#383E56',
     date: 'Jan 2019 - May 2022',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      `Built a national-facing web application centered on improving people's lives by helping them become job ready with upskilling, online digital trainings, resource findings and resume building all through the applicaiton. This app was build using Laravel, PHP, MySQL DB, modern JavaScript, Vue and React.`,
+      'Implemented a new CI/CD pipeline to reduce deployment time by 10%.',
+      'Used Cypress integration testing and jest for unit testing to establish code testing and create  deployment confidence.',
+      'Participated in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
@@ -157,38 +167,10 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'November 2017 - May 2019',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Learned the fundamentals of computer science and understanding the deeper workings of the web.',
+      'Built multiple projects from scratch using JavaScript and other front end tools.',
+      'Hands on experience building applications with Java and Eclipse as well as working with asynchronous code and fetching data via APIs',
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
 ];
 
@@ -300,4 +282,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

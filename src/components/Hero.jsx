@@ -1,6 +1,7 @@
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 import { motion } from 'framer-motion';
+import './Hero.css';
 
 const Hero = () => {
   return (
@@ -14,17 +15,19 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white text-[3em]`}>
             Welcome! <span className='text-[#3e7eff]'>Have a look around</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Software engineer and AWS Solutions Architect who loves all things
-            <span className='text-[#f7df1e]'> JavaScript</span>!
+            Passionate and ambitions Software engineer and Certified AWS
+            Solutions Architect who loves all things
+            <span className='text-[#f7df1e]'> JavaScript</span> and{' '}
+            <span className='text-[#35952c]'> Node.js</span>!
           </p>
         </div>
       </div>
       <ComputersCanvas />
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-10 sm:top-[45em] bottom-32 w-full flex justify-center items-end loader-bar'>
         <a href='#about'>
           <div className='w-[2.5em] h-[5em] rounded-3xl border-4 border-secondary flex justify-center items-start b-1'>
             <motion.div

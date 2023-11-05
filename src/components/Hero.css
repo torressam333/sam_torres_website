@@ -1,0 +1,22 @@
+@media screen and (min-width: 350) and (max-width: 768) {
+  .hero-header {
+    font-size: 3em !important;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1800px) {
+  .loader-bar {
+    margin-top: 25em !important;
+  }
+}
+
+@media screen and (min-width: 1800) and (max-width: 2400px) {
+  .loader-bar {
+    margin-top: 25em !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .loader-bar {
+    display: none !important;
+  }
+}
