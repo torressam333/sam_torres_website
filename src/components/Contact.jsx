@@ -14,10 +14,6 @@ const Contact = () => {
     message: '',
   });
 
-  // template_j0512dm
-  // torressam333
-  // NDYD3cmTe1sYgQdNe
-
   const [loading, setLoading] = useState(false);
   const formRef = useRef(null);
 
@@ -34,8 +30,8 @@ const Contact = () => {
 
     try {
       emailjs.send(
-        'torressam333', // service name
-        'template_j0512dm', // template id
+        import.meta.env.VITE_EMAIL_SERVICE, // service name
+        import.meta.env.VITE_EMAIL_TEMPLATE, // template id
         {
           from_name: form.name,
           to_name: 'Sam Torres',
@@ -43,7 +39,7 @@ const Contact = () => {
           to_email: 'phppro777@gmail.com',
           message: form.message,
         },
-        'NDYD3cmTe1sYgQdNe' //public key
+        import.meta.env.VITE_EMAIL_KEY //public key
       );
 
       setLoading(false);
