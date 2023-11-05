@@ -14,11 +14,52 @@ const Contact = () => {
     message: '',
   });
 
+  // template_j0512dm
+  // torressam333
+  // NDYD3cmTe1sYgQdNe
+
   const [loading, setLoading] = useState(false);
   const formRef = useRef(null);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Sending email
+    setLoading(true);
+
+    try {
+      emailjs.send(
+        'torressam333', // service name
+        'template_j0512dm', // template id
+        {
+          from_name: form.name,
+          to_name: 'Sam Torres',
+          from_email: form.email,
+          to_email: 'phppro777@gmail.com',
+          message: form.message,
+        },
+        'NDYD3cmTe1sYgQdNe' //public key
+      );
+
+      setLoading(false);
+      alert('Thank you, I will responsd as soon as possible!');
+
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      });
+    } catch (error) {
+      setLoading(false);
+      alert('Something went wrong...please try again.');
+      console.error('something went wrong', error);
+    }
+  };
 
   return (
     <div className='xl-mt:12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -70,7 +111,19 @@ const Contact = () => {
               className='bg-tertiatry py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-non font-medium'
             />
           </label>
+          <button
+            type='submit'
+            className='bg-white py-3 px-10 outline-none w-fit text-tertiary font-bold shadow-md shadow-primary rouded-xl text-md'
+          >
+            {loading ? 'Sending your message...' : 'Send it!'}
+          </button>
         </form>
+      </motion.div>
+      <motion.div
+        variants={slideIn('right', 'tween', '0.2', 1)}
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+      >
+        <EarthCanvas />
       </motion.div>
     </div>
   );

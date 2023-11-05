@@ -39,17 +39,17 @@ const About = () => {
         variants={fadeIn('', '', 0.2, 1)}
         className='mt-4 text-secondary text-[12px] max-w-5xl leading-[30px] '
       >
-        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          I am a Software engineer and AWS certified solutions architect with 5
-          years of full stack software engineering experience. I have experience
-          working with event driven architectures in AWS. I am skilled in
-          JavaScript, TypeScript and have expertise in frameworks like React,
-          Vue, and Express.js. I enjoy learning about all thinks JavaScript,
-          Docker, and event driven/serverless architectures in AWS. I am a quick
-          learner, empathetic servant leader, and I collaborate efficiently with
-          clients to create production ready, scalable, and user-friendly
-          solutions that solve real-world problems.
-        </p>
+        <span className={`${styles.heroSubText} mt-2 text-white-100`}>
+          I am a Senior Software engineer and AWS certified solutions architect
+          with 5 years of full stack software engineering experience. I have
+          experience working with, LAMP, MERN, and serverless event driven
+          architectures in AWS. I am skilled in JavaScript, TypeScript and have
+          expertise in frameworks like React, Vue, and node.js. I enjoy learning
+          about all thinks JavaScript, Docker, and event driven/serverless
+          architectures in AWS. I am a quick learner, empathetic servant leader,
+          and I collaborate efficiently with clients to create production ready,
+          scalable, and user-friendly solutions that solve real-world problems.
+        </span>
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10 '>

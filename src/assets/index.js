@@ -18,6 +18,7 @@ import sdc_project from './sdc_project.png';
 import mca_project from './mca_project.png';
 import cinemania_project from './cinemania_project.png';
 import privateSnsProject from './private_sns_plugin_tool.png';
+import Laravel from './laravel.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
@@ -43,6 +44,7 @@ import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 
 export {
+  Laravel,
   sdc_project,
   mca_project,
   cinemania_project,

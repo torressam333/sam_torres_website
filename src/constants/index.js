@@ -5,14 +5,12 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
   docker,
-  threejs,
   saaCo3,
   vueReactLogo,
   SDC1,
@@ -24,6 +22,7 @@ import {
   sdc_project,
   cinemania_project,
   github,
+  Laravel,
 } from '../assets';
 
 export const navLinks = [
@@ -78,12 +77,12 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
+    name: 'Larvel',
+    icon: Laravel,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
+    name: 'React JS',
+    icon: reactjs,
   },
   {
     name: 'Tailwind CSS',
@@ -96,10 +95,6 @@ const technologies = [
   {
     name: 'MongoDB',
     icon: mongodb,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
   },
   {
     name: 'git',
