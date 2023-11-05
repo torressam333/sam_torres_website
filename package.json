@@ -1,6 +1,7 @@
 {
   "name": "sam_t_portfolio",
-  "private": true,
+  "private": false,
+  "homepage": "https://torressam333.github.io/sam_torres_website",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
