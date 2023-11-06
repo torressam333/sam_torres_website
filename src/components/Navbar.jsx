@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className={navMainClass}>
-      <div className='w-full flex justify-between items-center max-w-8xl'>
+      <div className='w-full flex justify-between items-center max-w-9xl'>
         <Link
           to='/'
           className='flex items-center gap-2'

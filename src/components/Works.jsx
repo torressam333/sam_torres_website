@@ -25,7 +25,7 @@ const ProjectCard = ({
   const shortDescription = description.slice(0, 200);
 
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn('left', 'spring', index * 0.4, 0.5)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450, zIndex: 1 }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full relative'
@@ -103,4 +103,4 @@ const Works = () => (
   </>
 );
 
-export default SectionWrapper(Works, '');
+export default SectionWrapper(Works, 'work');

@@ -3,3 +3,7 @@
     margin-bottom: 5em;
   }
 }
+
+.computer3d {
+  touch-action: auto !important;
+}
