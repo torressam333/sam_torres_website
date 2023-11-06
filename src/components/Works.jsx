@@ -25,7 +25,7 @@ const ProjectCard = ({
   const shortDescription = description.slice(0, 200);
 
   return (
-    <motion.div variants={fadeIn('left', 'spring', index * 0.4, 0.5)}>
+    <motion.div variants={fadeIn('up', 'spring', 0.5 * index, 1)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450, zIndex: 1 }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full relative'
@@ -83,10 +83,7 @@ const Works = () => (
     </motion.div>
 
     <div className='w-full flex'>
-      <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
-        className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
+      <motion.p variants={fadeIn('up', 'spring', 0.1, 1)}>
         I have created and worked on a variety of software engineering projects,
         making major contributions to each. This is non-exhaustive list of
         projects I have worked on or created but these projects reflect my
@@ -103,4 +100,4 @@ const Works = () => (
   </>
 );
 
-export default SectionWrapper(Works, 'work');
+export default SectionWrapper(Works, 'works');
